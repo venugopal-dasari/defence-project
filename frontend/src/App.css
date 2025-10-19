@@ -1,0 +1,86 @@
+body {
+  background: #101726;
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #151e2b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 2rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #6fff57;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #6fff57;
+  margin-bottom: 1rem;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+/* Equipment Card Block UI */
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.equipment-card {
+  background: #1a2336;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  padding: 1.5rem;
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.equipment-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.equipment-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background: #1a1a1a;
+}
+
+.equipment-card .title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.equipment-card .category {
+  color: #6fff57;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  }
+
+.equipment-card .status {
+  color: #ffb347;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
